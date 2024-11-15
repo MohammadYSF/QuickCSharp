@@ -1,6 +1,6 @@
 public class User
 {
-    public int id{ get; private set; }
+    public int id { get; private set; }
     public string name { get; private set; } = string.Empty;
     public User(int id, string name)
     {
@@ -30,6 +30,6 @@ public class User
     }
     public override string ToString()
     {
-        return string.Format("user#{0}:{1}", id, name);
+        return string.Format("user_of_type:{0}#{1}:{2}", this.GetType().Name, id, name);
     }
 }

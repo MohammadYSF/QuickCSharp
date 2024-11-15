@@ -1,5 +1,9 @@
 public class Draft
 {
+    public override string ToString()
+    {
+        return string.Format("draft#{0}:{1}_status:{2}", id, title, status);
+    }
     public int id;
     public string title { get; private set; } = string.Empty;
     public string text { get; private set; } = string.Empty;
